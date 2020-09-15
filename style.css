@@ -4,6 +4,7 @@ body, html
 {
   font-family: 'Lato', sans-serif;
   color: rgba(0, 0, 0, 1);
+  font-size: 20px;
   height: 100%;
   padding: 0px;
   margin: 0px;
@@ -42,9 +43,15 @@ body, html
   margin: 0px;
 }
 
-#arrow {  }
-
 #banner-arrow
+{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+#banner-arrow-button
 {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
@@ -52,7 +59,7 @@ body, html
   font-size: 72px;
 }
 
-#banner-arrow-button { animation: animate 2s linear infinite; }
+#banner-arrow-text { animation: animate 2s linear infinite; }
 
 @keyframes animate
 {
@@ -63,45 +70,45 @@ body, html
   100% { transform: translateY(0px); }
 }
 
+#projects
+{
+  padding-top: 75px;
+  height: auto;
+  width: 100%;
+}
+
 .project
 {
-  margin: 75px auto;
-  display: block;
-  height: 50%;
+  padding: 0px 12.5% 75px 12.5%;
+  height: 500px;
   width: 75%;
 }
 
 .project-text
 {
-  line-height: 175%;
-  width: 52.5%;
+  margin: 50px 0px;
   float: left;
+  width: 45%;
 }
 
 .project-title
 {
-  padding: 0px 50px 20px 50px;
+  margin: 0px 0px 25px 0px;
   font-family: Arial;
   font-weight: bold;
   font-size: 32px;
 }
 
-.project-description
-{
-  padding: 0px 50px;
-  font-size: 20px;
-}
+.project-description { line-height: 150%; }
 
 .project-link
 {
     text-decoration: none;
-    padding: 0px 50px;
-    font-size: 20px;
+    padding-right: 50px;
 }
 
 .project-image
 {
-  background-image: url("image/preview/1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -110,14 +117,9 @@ body, html
   width: 35%;
 }
 
-#contact
-{
-  text-align: center;
-}
-
 #footer
 {
-  background-color: rgba(42, 45, 51, 1);
+  background-color: rgba(25, 25, 25, 1);
   text-align: center;
   padding-top: 25px;
   height: 50px;
@@ -126,7 +128,7 @@ body, html
 
 #footer-text
 {
-  color: rgba(200, 200, 200, 1);
+  color: rgba(225, 225, 225, 1);
   font-size: 18px;
   margin: 0px;
 }
