@@ -1,67 +1,65 @@
-<!-- Copyright © 2020 Dave Bakker. All rights reserved. -->
+<!-- Copyright © 2021 Dave Bakker. All rights reserved. -->
+
 <!DOCTYPE html>
 
-<!-- HTML-->
+<!-- HTML -->
 <html lang="en" dir="ltr">
 
-<!-- HEAD -->
+  <!-- HEAD -->
   <head>
 
     <!-- META -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="author" content="Dave Bakker">
-    <meta name="keywords" content="HTML5, CSS, Dave Bakker, Dave, Bakker, Portfolio, Developer">
-    <meta name="description" content="Dave Bakker's personal portfolio!">
 
     <!-- LINK -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="image/favicon/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index/style.css">
+    <link rel="icon" href="assets/favicon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
 
     <!-- TITLE -->
-    <title>
-      Dave Bakker
-    </title>
+    <title>Dave Bakker - Fasten Your Seatbelt Start Assignment</title>
 
   </head>
 
   <!-- BODY -->
   <body>
 
-    <!-- BANNER -->
-    <div id="banner">
-      <div id="banner-text">
-        <p id="banner-name"> DAVE BAKKER </p>
-        <p id="banner-description"> Developer, programmer, and creator </p>
-      </div>
-      <div id="banner-arrow"><a id="banner-arrow-button" href="#projects"><i id="banner-arrow-text" class="fa fa-angle-down"></i></a></div>
+    <!-- HEADER -->
+    <div class="banner">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="food.html">FOOD</a></li>
+            <li><a href="games.html">GAMES</a></li>
+          </ul>
+        </nav>
+      </header>
+      <header>
+          <h1 class="title">Dave Bakker</h1>
+      </header>
     </div>
 
-    <!-- PROJECTS -->
-    <div id="projects">
-      <div class="project" id="project-last">
-        <div class="project-text">
-          <p class="project-title"> GAME ENGINE </p>
-          <p class="project-description">
-            This game engine was the start of my pursue in graphics and software. </br>
-            I created the game engine in C++ with the libraries GLFW and GLEW.
-            Despite the difficulty barrier, I learned a lot and was happy with the result.
-          </p>
-          <a class="project-link" href="https://www.github.com/davebakker/engine" target="_blank"> Game engine source </a>
-        </div>
-        <div class="project-image"  style="background-image: url('image/preview/1.jpg');"></div>
-      </div>
+    <!-- MAIN CONTAINER -->
+    <div class="about-container">
+        <h2>All you need to know about me</h2>
+        <p>
+          Hi, I'm Dave. In the year twenty-twenty I graduated from Mediacollege in Amsterdam with a degree in media- and game development.
+          From the beginning of things, I've had a passion for games, graphics, simulations, experiences, and game engines in particular.
+          In my free time, I love to work on/with code or play games. Besides that, I love to cook.
+          This also goes well with the fact that introduced a plant-based ethic into my life.
+          The reason I decided to study software engineering is that I wish to continue in the direction of the future.
+          I also want to broaden my knowledge, establish a career in software engineering, and make dreams a reality.
+        </p>
     </div>
 
     <!-- FOOTER -->
-    <div id="footer">
-      <p id="footer-text"> Copyright © 2020 Dave Bakker. All rights reserved. </p>
-    </div>
-
-    <!-- SCRIPT -->
-    <script src="script.js"></script>
+    <footer>
+      <p>Copyright © 2021 Dave Bakker. All rights reserved.</p>
+    </footer>
 
   </body>
+
 </html>

@@ -1,0 +1,145 @@
+/* Copyright © 2021 Dave Bakker. All rights reserved. */
+
+:root
+{
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(0, 0, 0);
+  --primary-text-color: rgb(0, 0, 0);
+
+  --primary-font: 'Source Sans Pro', sans-serif;
+  --secondary-font: 'Kaisei Tokumin', serif;
+  --primary-font-size: 22px;
+}
+
+html, body
+{
+    background-color: var(--primay-color)
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-size: var(--primary-font-size);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title
+{
+  color: var(--primary-color);
+  max-width: 80%;
+  margin: 0px;
+  padding-bottom: 3.5vh;
+  padding-left: 3.5vh;
+  font-size: 144px;
+  line-height: 0.90;
+  align-items: center;
+  font-weight: bold;
+}
+
+.banner
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-size: cover;
+  animation-name: color-cycle-background;
+  animation-duration: 7500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin: 0;
+  padding: 0;
+}
+
+/* Color cycling background (blue, cyan, green, yellow, orange, dark-orange, red, pink, purple) */
+@keyframes color-cycle-background
+{
+  0%    { background-color: rgb(63, 164, 216);  }
+  12.5% { background-color: rgb(51, 190, 184);  }
+  25%   { background-color: rgb(178, 194, 36);  }
+  37.5% { background-color: rgb(254, 204, 48);  }
+  50%   { background-color: rgb(250, 163, 40);  }
+  62.5% { background-color: rgb(247, 99, 30);   }
+  75%   { background-color: rgb(220, 56, 56);   }
+  87.5% { background-color: rgb(239, 101, 122); }
+  100%  { background-color: rgb(164, 99, 216);  }
+}
+
+nav
+{
+  margin-left: auto;
+  margin-right: 65px;
+}
+
+ul
+{
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+
+ul > li > a
+{
+  color: var(--primary-color);
+  font-size: var(--primary-font-size);
+  padding-left: 25px;
+  padding-right: 25px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Animated underline hidden */
+li > a::after
+{
+  content: "";
+  display: block;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: var(--primary-color);
+  transform: scaleX(0);
+  transition: 0.5s ease;
+}
+
+/* Animated underline shown on hover */
+ul > li > a:hover::after { transform: scaleX(1); }
+
+.about-container
+{
+  font-family: var(--secondary-font);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  max-width: 36em;
+  margin: 0px auto;
+  padding: 5vh 10vh;
+  text-align: justify;
+  line-height: 165%;
+}
+
+.about-container > h2
+{
+  font-size: 32px;
+  text-align: center;
+}
+
+footer
+{
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
